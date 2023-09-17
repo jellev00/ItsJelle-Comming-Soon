@@ -1,0 +1,54 @@
+.infoContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  .name {
+    font-family: $Lilita;
+    font-size: $Font_48;
+  }
+
+  .commingSoon {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 0 0;
+    color: $Pink;
+    font-family: $Lilita;
+    font-size: $Font_24;
+
+    .loadingDots {
+      width: 30px;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: disc;
+
+      .dots {
+        animation:loading 1s infinite linear;
+      }
+      .dots:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+
+      .dots:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .dots:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0%,50%,75%,100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(2, 2);
+  }
+}

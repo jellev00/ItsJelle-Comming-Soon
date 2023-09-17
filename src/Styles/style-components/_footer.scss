@@ -1,0 +1,11 @@
+.Footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  .copyright {
+    margin: 0 0 20px 0;
+  }
+}
